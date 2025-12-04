@@ -1,0 +1,76 @@
+body {
+  background-color: #121212;
+}
+.heading {
+  background-color: #1f4788;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.all-messages-container {
+  padding-bottom: 50px; /* Must be equal to or slightly greater than the fixed bar height */
+}
+/*.response-text{
+    color: black;
+    display: inline-block;
+    background-color: maroon;
+    margin: 3px auto;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+
+}*/
+.response-text p {
+  display: block;
+  max-width: fit-content;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border-radius: 20px; /* Highly rounded corners for a soft look */
+  line-height: 1.4;
+  font-size: 1em;
+  background-color: #383838; /* Lighter dark gray for the received message */
+  color: #e0e0e0;
+}
+#fixed-chat-bar {
+  /* 1. Fix the position relative to the browser window */
+  position: fixed;
+
+  /* 2. Pin it to the bottom edge of the window */
+  bottom: 0;
+
+  /* 3. Make it span the full width of the window */
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  /* 4. Styling (colors, padding, layout) */
+  background-color: black; /* White background to cover content underneath */
+  padding: 10px;
+  border-top: 1px solid black; /* Separator line */
+
+  /* Optional: Use Flexbox to lay out the input and button nicely */
+  display: flex;
+  gap: 10px; /* Space between input and button */
+}
+
+#message-input {
+  /* Make the input field take up most of the space */
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#send-btn {
+  /* Basic styling for the button */
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

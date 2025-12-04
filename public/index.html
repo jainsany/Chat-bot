@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>ChatBot</title>
+  </head>
+  <body>
+    <div class="heading">Chat Bot</div>
+    <form id="fixed-chat-bar">
+    <input type="text" id="message-input" placeholder="Enter your message" />
+    <button type="button" id="send-btn">Send</button>
+    </form>
+    <div class="all-messages-container">
+    <div id="messages" class="response-text"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="socket.js"></script>
+  </body>
+</html>
